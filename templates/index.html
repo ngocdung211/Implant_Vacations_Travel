@@ -4,43 +4,28 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Implant Vacations Travel | Affordable Dental Implants in Hanoi, Vietnam</title>
-  <meta name="description" content="Get world-class dental implants in Hanoi, Vietnam at a fraction of Japan prices. Combine top-tier dental care with an unforgettable vacation experience.">
-  <meta name="keywords" content="dental implants, dental tourism, Hanoi, Vietnam, affordable implants, Japanese patients, dental vacation">
+  <title>Implant Vacations Travel | Premium Dental Tourism in Hanoi</title>
+  <meta name="description" content="Dental tourism for Japanese patients seeking trusted treatment in Hanoi. Free consultation, transparent process, professional care combined with luxury travel.">
+  <meta name="keywords" content="dental tourism, Hanoi, dental implants, Japanese patients, consultation, Vietnam dental">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Append
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/main.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/custom.css') }}" rel="stylesheet">
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
       <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">Implant Vacations</h1><span>.</span>
       </a>
@@ -49,7 +34,10 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#destination">Destination</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#destination">Hanoi</a></li>
+          <li><a href="#planning">Planning</a></li>
+          <li><a href="#support">Support</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -57,530 +45,465 @@
       </nav>
 
       <a class="btn-getstarted" href="#contact">Free Consultation</a>
-
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="Hanoi cityscape — your destination for world-class dental implants" data-aos="fade-in">
+      <img src="{{ url_for('static', filename='assets/img/hero-clinic.png') }}" alt="Modern luxury dental clinic overlooking Hanoi" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">World-Class Dental Implants.<br>Half the Price. Plus an Unforgettable Vacation.</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Japanese patients — stop waiting years for expensive implants. Get a permanent, beautiful smile in Hanoi, Vietnam, and enjoy the trip of a lifetime. Internationally trained dentists. Transparent pricing. Zero compromise on quality.</p>
+            <p class="hero-tagline" data-aos="fade-up" data-aos-delay="50">DENTAL TOURISM IN HANOI, VIETNAM</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">Premium Dental Care<br>Without Japan's Long Wait &amp; High Cost</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Implant Vacations Travel supports Japanese patients who want trusted treatment, transparent planning, and a comfortable medical journey. Professional care in a modern setting — return home with confidence.</p>
           </div>
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="#contact" class="btn btn-primary btn-lg">Get Your Free Consultation</a>
+          <div class="col-lg-6 d-flex flex-wrap align-items-center gap-2" data-aos="fade-up" data-aos-delay="300">
+            <a href="#contact" class="btn-hero-cta">Free Consultation <i class="bi bi-arrow-right"></i></a>
+            <a href="#how-it-works" class="btn-hero-secondary">Learn How It Works <i class="bi bi-chevron-down"></i></a>
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section dark-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Patients Treated</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Years of Experience</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="98" data-purecounter-duration="1" class="purecounter"></span>
-              <p>% Patient Satisfaction</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>
-              <p>% Average Savings vs. Japan</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-xl-center gy-5">
-
-          <div class="col-xl-5 content">
-            <h3>Why Choose Us</h3>
-            <h2>Affordable, World-Class Implants — Without the Wait or the Worry</h2>
-            <p>In Japan, a single dental implant can cost ¥300,000–¥500,000 and require months of waiting. At Implant Vacations Travel, we connect you with Hanoi's top-rated implant specialists who use the same globally recognized implant brands — at a price that includes your entire trip.</p>
-            <a href="#contact" class="read-more"><span>Book a Free Consultation</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
-          <div class="col-xl-7">
-            <div class="row gy-4 icon-boxes">
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box">
-                  <i class="bi bi-award"></i>
-                  <h3>Internationally Certified Dentists</h3>
-                  <p>Our partner clinics employ dentists trained in Europe, the US, and Japan — fluent in the standards that matter to you.</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-currency-yen"></i>
-                  <h3>Save Up to 60% vs. Japan Prices</h3>
-                  <p>Get the same premium implant brands at a fraction of the cost — even after including flights and accommodation.</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-translate"></i>
-                  <h3>Japanese-Language Support</h3>
-                  <p>From your first consultation to post-treatment follow-up, our team provides seamless communication in Japanese.</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-shield-check"></i>
-                  <h3>End-to-End Care Coordination</h3>
-                  <p>We handle appointments, airport transfers, hotel bookings, and aftercare planning — so you can focus on healing and exploring.</p>
-                </div>
-              </div><!-- End Icon Box -->
-
+    <section class="trust-strip section">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="trust-card">
+              <i class="bi bi-camera-video"></i>
+              <div>
+                <h4>Online First</h4>
+                <p>Discuss treatment needs before booking flights.</p>
+              </div>
             </div>
           </div>
-
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="trust-card">
+              <i class="bi bi-calendar-check"></i>
+              <div>
+                <h4>Clear Timeline</h4>
+                <p>Understand appointment flow and recovery time early.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="trust-card">
+              <i class="bi bi-luggage"></i>
+              <div>
+                <h4>Travel Support</h4>
+                <p>Coordinate clinic schedule, arrival, stay, and rest days.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /About Section -->
-
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="services section">
-
-      <!-- Section Title -->
+    <section id="how-it-works" class="how-it-works section">
       <div class="container section-title" data-aos="fade-up">
         <h2>How It Works</h2>
-        <p>Getting your new smile is simpler than you think. Three easy steps — from your living room in Japan to a beautiful smile in Hanoi.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-camera-video"></i></div>
-              <div>
-                <h4 class="title">Step 1: Free Online Consultation</h4>
-                <p class="description">Connect with our specialist from the comfort of your home in Japan. Share your dental records, ask every question, and receive a transparent, itemized treatment plan and cost estimate — completely free and with no obligation.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-airplane"></i></div>
-              <div>
-                <h4 class="title">Step 2: Travel &amp; Treatment</h4>
-                <p class="description">Fly to Hanoi — just 5 hours from Tokyo — and be greeted by our dedicated care coordinator. Your implant procedure is carried out by our certified specialist in a modern, internationally accredited clinic. We manage every detail so your only job is to relax.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-cup-hot"></i></div>
-              <div>
-                <h4 class="title">Step 3: Recover &amp; Explore</h4>
-                <p class="description">While your smile heals, Hanoi opens its arms to you. Stroll the charming Old Quarter, savour world-famous Vietnamese cuisine, and discover centuries of history — all at a pace that suits your recovery. Return home refreshed, rested, and smiling.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
+        <p>A clear, reassuring process from first consultation to recovery.</p>
       </div>
 
-    </section><!-- /How It Works Section -->
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-card">
+              <div class="step-number">01</div>
+              <div class="step-icon"><i class="bi bi-camera-video"></i></div>
+              <h4>Free Online Consultation</h4>
+              <p>Share your dental concerns and records remotely. Our team explains the expected treatment plan, timeline, and preparation steps before you travel, at no cost.</p>
+            </div>
+          </div>
 
-    <!-- Destination Section -->
-    <section id="destination" class="features section">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-card">
+              <div class="step-number">02</div>
+              <div class="step-icon"><i class="bi bi-airplane"></i></div>
+              <h4>Travel &amp; Treatment</h4>
+              <p>Arrive in Hanoi and receive treatment in a modern clinical environment. We coordinate scheduling, transfers, and accommodation so you can focus on your care.</p>
+            </div>
+          </div>
 
-      <!-- Section Title -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-card">
+              <div class="step-number">03</div>
+              <div class="step-icon"><i class="bi bi-cup-hot"></i></div>
+              <h4>Recover &amp; Explore</h4>
+              <p>Recover at a comfortable pace while experiencing Hanoi's relaxed atmosphere, vibrant culture, and cuisine. Your health and comfort come first.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="partners section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Your Destination: Hanoi, Vietnam</h2>
-        <p>Where world-class dental care meets one of Asia's most captivating cities.</p>
-      </div><!-- End Section Title -->
+        <h2>Our Clinical Partners</h2>
+        <p>Selected Hanoi clinics supporting treatment planning, in-person care, and patient coordination for international dental travelers.</p>
+      </div>
 
       <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="partner-card">
+              <div class="partner-visual">
+                <i class="bi bi-hospital"></i>
+              </div>
+              <div class="partner-content">
+                <span class="partner-label">Partner Clinic</span>
+                <h3>Australian Dental Clinic</h3>
+                <p>Central Hanoi clinic supporting international dental patients with consultation and treatment coordination.</p>
+                <div class="partner-location">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Nguyen Du, Hai Ba Trung, Hanoi</span>
+                </div>
+                <a href="https://www.google.com/maps?q=Australian+Dental+Clinic,+3+Nguy%E1%BB%85n+Du,+Hai+B%C3%A0+Tr%C6%B0ng,+H%C3%A0+N%E1%BB%99i+10000,+Vietnam&ftid=0x3135ab9e14d0e6d9:0x1a15b2e4a0b05b8b&entry=gps&shh=CAE&lucs=,94297699,94284493,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI2LjE5LjIuOTEwMjIxOTUwMBgAINeCAypILDk0Mjk3Njk5LDk0Mjg0NDkzLDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjE4NjQxLDk0MjgyMTM0LDk0Mjg2ODY5QgJUVw%3D%3D&skid=4ae21b0d-f7c8-46e9-8726-17b9b8afb1d8&g_st=ic" class="btn-partner-map" target="_blank" rel="noopener">View Location <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
 
-        <div class="row gy-4 align-items-center features-item">
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="partner-card">
+              <div class="partner-visual">
+                <i class="bi bi-hospital"></i>
+              </div>
+              <div class="partner-content">
+                <span class="partner-label">Partner Clinic</span>
+                <h3>Nha Khoa Minh Chau</h3>
+                <p>Local Hanoi dental partner supporting consultation, appointment planning, and treatment journey coordination.</p>
+                <div class="partner-location">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Tran Binh, Tu Liem, Hanoi</span>
+                </div>
+                <a href="https://www.google.com/maps?q=Nha+Khoa+Minh+Ch%C3%A2u,+28+P.+Tr%E1%BA%A7n+B%C3%ACnh,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i+12014,+Vietnam&ftid=0x313454b1661b04c3:0x83fd2bb9bd47e422&entry=gps&shh=CAE&lucs=,94297699,94284493,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI2LjE5LjIuOTEwMjIxOTUwMBgAIIgnKkgsOTQyOTc2OTksOTQyODQ0OTMsOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsOTQyMTg2NDEsOTQyODIxMzQsOTQyODY4NjlCAlRX&skid=9eee4415-d3ac-4e5e-be48-1187b8b4b1ab&g_st=ic" class="btn-partner-map" target="_blank" rel="noopener">View Location <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destination" class="destination section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Destination Highlight: Hanoi</h2>
+        <p>Where trusted medical care and a rewarding travel experience come together.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4 align-items-center">
           <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h3>A City That Heals — Inside and Out</h3>
-            <p>
-              Hanoi is not just a medical destination; it is a cultural treasure. Ranked among Southeast Asia's top travel destinations, this vibrant capital blends French colonial architecture, serene lakes, and a culinary scene that has captivated the world. When you visit for your implant treatment, you gain access to all of this.
-            </p>
-            <p>
-              Our partner clinics are equipped with the latest imaging technology, sterilisation protocols that meet international standards, and implant systems trusted by dentists in Japan, the EU, and the US. You will receive the same quality of care — at a cost that makes the trip worthwhile even before the savings.
-            </p>
-            <a href="#contact" class="btn btn-get-started">Plan My Trip</a>
+            <h3>Safe, Relaxing, and Professional</h3>
+            <p>Hanoi offers a practical and comfortable environment for medical travel. Patients benefit from supportive hospitality, recovery-friendly surroundings, and access to skilled dentists working to modern treatment standards.</p>
+            <p>The city also provides meaningful cultural depth — from its historic Old Quarter to its distinct coffee culture and cuisine — giving patients and companions a calm and rewarding recovery period.</p>
+
+            <div class="destination-features">
+              <div class="feature-item" data-aos="fade-up" data-aos-delay="250">
+                <i class="bi bi-airplane"></i>
+                <div>
+                  <strong>Direct Flights</strong>
+                  <span>From Tokyo, Osaka, and Nagoya — about 5 hours.</span>
+                </div>
+              </div>
+              <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-hospital"></i>
+                <div>
+                  <strong>Modern Clinics</strong>
+                  <span>Advanced imaging and treatment planning tools.</span>
+                </div>
+              </div>
+              <div class="feature-item" data-aos="fade-up" data-aos-delay="350">
+                <i class="bi bi-shield-check"></i>
+                <div>
+                  <strong>Safe Recovery</strong>
+                  <span>Calm neighborhoods suitable for post-treatment rest.</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn-destination-cta" data-aos="fade-up" data-aos-delay="400">Plan My Consultation <i class="bi bi-arrow-right"></i></a>
           </div>
           <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
             <div class="image-stack">
-              <img src="assets/img/features-light-1.jpg" alt="Modern dental clinic in Hanoi" class="stack-front">
-              <img src="assets/img/features-light-2.jpg" alt="Hanoi Old Quarter" class="stack-back">
-            </div>
-          </div>
-        </div><!-- Features Item -->
-
-        <div class="row gy-4 align-items-stretch justify-content-between features-item">
-          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="Hanoi street scene and culture">
-          </div>
-          <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3>Everything You Need, Right Here</h3>
-            <p>Hanoi offers an unbeatable combination of affordability, accessibility, and quality of life that makes it the premier destination for dental tourism from Japan.</p>
-            <ul>
-              <li><i class="bi bi-check"></i> <span>Direct flights from Tokyo, Osaka, and Nagoya — from 5 hours.</span></li>
-              <li><i class="bi bi-check"></i> <span>Internationally accredited clinics with the latest dental technology.</span></li>
-              <li><i class="bi bi-check"></i> <span>A rich culture, delicious food, and world-class hospitality at every turn.</span></li>
-            </ul>
-            <a href="#contact" class="btn btn-get-started align-self-start">Get Started Today</a>
-          </div>
-        </div><!-- Features Item -->
-
-      </div>
-
-    </section><!-- /Destination Section -->
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="content px-xl-5">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
-              <p>
-                Have questions about dental tourism or the implant process? We have answered the most common ones below. Don't see yours? Contact us for a free, no-obligation consultation.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="faq-container">
-              <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Is the quality of dental care in Hanoi comparable to Japan?</span></h3>
-                <div class="faq-content">
-                  <p>Yes. Our partner clinics use globally recognised implant brands (such as Straumann and Nobel Biocare) and employ dentists trained to international standards. The clinics hold ISO certifications and follow strict sterilisation and safety protocols. Many of our dentists have undertaken advanced training in Europe, the US, and Asia.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">2.</span> <span>How much can I really save compared to getting implants in Japan?</span></h3>
-                <div class="faq-content">
-                  <p>A single dental implant in Japan typically costs ¥300,000–¥500,000 (approximately USD 2,000–3,500). In Hanoi, the same procedure — using the same implant brands — costs significantly less, and that includes our care coordination service. Even after factoring in flights and accommodation, most patients save 50–60% overall.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">3.</span> <span>How long will I need to stay in Hanoi?</span></h3>
-                <div class="faq-content">
-                  <p>Most implant procedures require two visits: the first for the implant placement (typically a stay of 5–7 days), and a second visit approximately 3–6 months later for the crown fitting (typically 3–4 days). Our care coordinator will create a personalised timeline based on your treatment plan.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">4.</span> <span>Do you offer Japanese-language support?</span></h3>
-                <div class="faq-content">
-                  <p>Absolutely. Our team includes Japanese-speaking care coordinators who will guide you through every step — from your initial online consultation, through your stay in Hanoi, and during any follow-up communication after you return home.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">5.</span> <span>What is included in the Implant Vacations Travel package?</span></h3>
-                <div class="faq-content">
-                  <p>Our all-inclusive packages cover the dental treatment itself, airport transfers, hotel accommodation near the clinic, a dedicated care coordinator, translation services, and assistance planning leisure activities during your recovery time. Contact us for a personalised quote tailored to your needs.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /FAQ Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Ready for a New Smile — and a New Adventure?</h3>
-              <p>Your free consultation takes less than 15 minutes. Share your dental records with us, and our specialist will send you a complete, transparent treatment plan and cost estimate within 48 hours. There is no obligation, and the first step is completely free.</p>
-              <a class="cta-btn" href="#contact">Book My Free Consultation</a>
+              <img src="{{ url_for('static', filename='assets/img/hanoi-aerial.png') }}" alt="Aerial view of Hanoi's Hoan Kiem Lake" class="stack-front" loading="lazy">
+              <img src="{{ url_for('static', filename='assets/img/hanoi-streets.jpg') }}" alt="Hanoi street culture" class="stack-back" loading="lazy">
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Call To Action Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
+    <section id="planning" class="planning section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Get Your Free Consultation</h2>
-        <p>Fill in your details below and our team will contact you within 24 hours to discuss your treatment options — in Japanese, at a time that suits you.</p>
-      </div><!-- End Section Title -->
+        <h2>What We Clarify Before You Travel</h2>
+        <p>Every journey starts with practical treatment planning, not guesswork.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="planning-panel">
+              <h3>Treatment Planning Checklist</h3>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> Current dental concern and treatment goals</li>
+                <li><i class="bi bi-check2-circle"></i> Available X-rays, scans, photos, or dental notes</li>
+                <li><i class="bi bi-check2-circle"></i> Expected appointments and recovery days</li>
+                <li><i class="bi bi-check2-circle"></i> Estimated travel timing and companion needs</li>
+                <li><i class="bi bi-check2-circle"></i> Questions to ask before confirming flights</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="standards-panel">
+              <h3>Clinical Standards Focus</h3>
+              <div class="standard-item">
+                <i class="bi bi-clipboard2-pulse"></i>
+                <div>
+                  <h4>Diagnosis First</h4>
+                  <p>Treatment discussion starts from dental records and patient goals.</p>
+                </div>
+              </div>
+              <div class="standard-item">
+                <i class="bi bi-shield-plus"></i>
+                <div>
+                  <h4>Modern Safety Protocols</h4>
+                  <p>Clinic coordination emphasizes sterile workflow and careful scheduling.</p>
+                </div>
+              </div>
+              <div class="standard-item">
+                <i class="bi bi-chat-left-text"></i>
+                <div>
+                  <h4>Clear Communication</h4>
+                  <p>Patients receive practical explanations before making travel decisions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="support section">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <span class="section-kicker">TRAVEL SUPPORT</span>
+            <h2>Medical care and travel details planned together.</h2>
+            <p>Dental tourism works best when appointment timing, transport, accommodation, and recovery time are aligned. We help patients understand each step before arrival and during their stay in Hanoi.</p>
+            <a href="#contact" class="btn-destination-cta">Start Free Consultation <i class="bi bi-arrow-right"></i></a>
+          </div>
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="support-grid">
+              <div class="support-card">
+                <i class="bi bi-calendar2-week"></i>
+                <h4>Appointment Coordination</h4>
+                <p>Align treatment slots with arrival, recovery, and departure windows.</p>
+              </div>
+              <div class="support-card">
+                <i class="bi bi-car-front"></i>
+                <h4>Arrival Guidance</h4>
+                <p>Plan airport transfer options and first-day clinic logistics.</p>
+              </div>
+              <div class="support-card">
+                <i class="bi bi-building-check"></i>
+                <h4>Hotel Guidance</h4>
+                <p>Choose recovery-friendly areas near clinic access and calm amenities.</p>
+              </div>
+              <div class="support-card">
+                <i class="bi bi-heart-pulse"></i>
+                <h4>Recovery Pacing</h4>
+                <p>Balance rest, follow-up visits, gentle meals, and light exploration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Questions Japanese Patients Ask</h2>
+        <p>Practical answers for planning dental care abroad.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Clinic Location</h3>
-                  <p>Hanoi, Vietnam</p>
-                  <p>(Exact address provided upon booking)</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call / WhatsApp / Line</h3>
-                  <p>+84 (0) 000 000 000</p>
-                  <p>Japanese support available</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>hello@implantvacations.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
-                  <h3>Response Hours</h3>
-                  <p>Monday – Saturday</p>
-                  <p>9:00 AM – 6:00 PM (ICT, UTC+7)</p>
-                </div>
-              </div><!-- End Info Item -->
-
+        <div class="accordion faq-accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">How many days should I stay in Hanoi?</button>
+            </h3>
+            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">The right stay depends on treatment scope. Online consultation helps estimate appointment count, rest days, and follow-up timing before you book travel.</div>
             </div>
-
           </div>
-
-          <div class="col-lg-6">
-            <form id="consultation-form" action="/consultation" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-12">
-                  <input type="tel" class="form-control" name="phone" placeholder="Phone / WhatsApp / Line ID">
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Tell us about your dental situation and any questions you have." required></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Thank you! We will be in touch within 24 hours.</div>
-
-                  <button type="submit">Request My Free Consultation</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Can I consult before booking flights?</button>
+            </h3>
+            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. The recommended first step is an online consultation so you can understand likely treatment needs and timing before making travel commitments.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">What records should I prepare?</button>
+            </h3>
+            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Useful records include recent X-rays, CT scans if available, dental photos, treatment notes, medication details, and a short explanation of your goals.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">Can a companion travel with me?</button>
+            </h3>
+            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. Many patients prefer traveling with a companion, especially for implant treatment or longer recovery windows. Accommodation planning can account for that.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">What happens after I return to Japan?</button>
+            </h3>
+            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Follow-up needs are discussed during planning. Patients should keep treatment records and understand any recommended checkup schedule before returning home.</div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Get Your Free Consultation</h2>
+        <p>Fill in your details below. Our team will contact you within 24 hours to discuss next steps.</p>
       </div>
 
-    </section><!-- /Contact Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>Hanoi, Vietnam</p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>hello@implantvacations.com</p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h3>Hours</h3>
+                  <p>Monday – Saturday, 9:00 AM – 6:00 PM (ICT)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form id="consultation-form" action="/consultation" method="post" class="consultation-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="form-name" class="form-label">Your Name</label>
+                  <input id="form-name" type="text" name="name" class="form-control" placeholder="John Tanaka" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="form-email" class="form-label">Your Email</label>
+                  <input id="form-email" type="email" class="form-control" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="form-phone" class="form-label">Phone Number</label>
+                  <input id="form-phone" type="tel" class="form-control" name="phone" placeholder="+81 90 1234 5678" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="form-message" class="form-label">Message</label>
+                  <textarea id="form-message" class="form-control" name="message" rows="5" placeholder="Tell us about your dental situation and any questions you have." required></textarea>
+                </div>
+
+                <div class="col-12">
+                  <p class="privacy-note">By submitting this form, you agree to be contacted about your consultation request. Please avoid sending highly sensitive medical documents until our team confirms secure next steps.</p>
+                  <div class="form-status"></div>
+                  <button type="submit" class="btn-form-submit">
+                    <span class="btn-text">Send Consultation Request</span>
+                    <span class="btn-loading" style="display:none;"><i class="bi bi-arrow-repeat spin"></i> Sending...</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
-
+  <footer id="footer" class="footer position-relative">
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
+        <div class="col-lg-4 col-md-6 footer-about">
           <a href="/" class="logo d-flex align-items-center">
             <span class="sitename">Implant Vacations Travel</span>
           </a>
-          <p>We help Japanese patients access world-class dental implants in Hanoi, Vietnam — at a price that makes the trip worthwhile, with care and support every step of the way. Your smile, your adventure.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-line"></i></a>
-          </div>
+          <p>We help Japanese patients access trusted dental care in Hanoi with clear process, transparent planning, and full travel support.</p>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        <div class="col-lg-2 col-md-6 footer-links">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#hero">Home</a></li>
-            <li><a href="#about">Why Choose Us</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#destination">Destination</a></li>
+            <li><a href="#destination">Hanoi</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Legal</h4>
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Planning</h4>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#planning">Treatment Planning</a></li>
+            <li><a href="#support">Travel Support</a></li>
+            <li><a href="#contact">Privacy Notice</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <div class="col-lg-4 col-md-6 footer-newsletter">
           <h4>Stay Informed</h4>
-          <p>Subscribe to receive dental tourism tips, Hanoi travel guides, and exclusive package offers.</p>
-          <form action="#" method="post" class="mt-3">
-            <div class="sign-up-form d-flex gap-2">
-              <input type="email" name="newsletter_email" class="form-control" placeholder="Your email address">
-              <input type="submit" class="btn btn-primary" value="Subscribe">
-            </div>
+          <p>Receive dental tourism tips and travel guides.</p>
+          <form id="newsletter-form" action="/newsletter" method="post" class="d-flex gap-2 mt-2">
+            <input type="email" name="newsletter_email" class="form-control" placeholder="Your email" required>
+            <button type="submit" class="btn-newsletter">Sign Up</button>
           </form>
-          <p class="mt-3"><strong>Email:</strong> <span>hello@implantvacations.com</span></p>
+          <div class="newsletter-status mt-2"></div>
         </div>
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="sitename">Implant Vacations Travel</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-      </div>
+      <p>&copy; <span class="sitename">Implant Vacations Travel</span> {{ year }}. All Rights Reserved</p>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <!-- Consultation form AJAX handler -->
-  <script>
-    (function () {
-      var form = document.getElementById('consultation-form');
-      if (!form) return;
-
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        var loadingEl = form.querySelector('.loading');
-        var errorEl = form.querySelector('.error-message');
-        var sentEl = form.querySelector('.sent-message');
-
-        loadingEl.classList.add('d-block');
-        errorEl.classList.remove('d-block');
-        sentEl.classList.remove('d-block');
-
-        fetch('/consultation', {
-          method: 'POST',
-          body: new FormData(form)
-        })
-          .then(function (res) { return res.json(); })
-          .then(function (data) {
-            loadingEl.classList.remove('d-block');
-            if (data.status === 'success') {
-              sentEl.classList.add('d-block');
-              form.reset();
-            } else {
-              errorEl.textContent = 'Something went wrong. Please try again.';
-              errorEl.classList.add('d-block');
-            }
-          })
-          .catch(function () {
-            loadingEl.classList.remove('d-block');
-            errorEl.textContent = 'Could not send your request. Please try again or email us directly.';
-            errorEl.classList.add('d-block');
-          });
-      });
-    })();
-  </script>
-
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 </body>
 
 </html>

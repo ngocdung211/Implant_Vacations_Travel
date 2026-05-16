@@ -1,0 +1,18 @@
+[Unit]
+Description=Medical Clinic Flask App
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/Medical_Clinic
+Environment="PORT=4999"
+Environment="FLASK_DEBUG=false"
+ExecStart=/home/ubuntu/Medical_Clinic/venv/bin/gunicorn --workers 2 --bind 127.0.0.1:4999 app:app
+Restart=always
+RestartSec=5
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

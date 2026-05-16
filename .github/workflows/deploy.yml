@@ -1,0 +1,21 @@
+name: Deploy Flask app
+
+on:
+  push:
+    branches:
+      - copilot/setup-flask-backend
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-medical-clinic
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Deploy on EC2
+        run: |
+          cp /home/ubuntu/Medical_Clinic/deploy_backend.sh /tmp/deploy_medical_clinic.sh
+          bash /tmp/deploy_medical_clinic.sh
