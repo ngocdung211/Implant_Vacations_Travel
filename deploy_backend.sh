@@ -64,6 +64,15 @@ sudo systemctl restart "$SERVICE_NAME"
 sudo systemctl is-active --quiet "$SERVICE_NAME"
 
 echo_message "Checking local application health"
-curl --fail --silent --show-error "http://127.0.0.1:${APP_PORT}/" >/dev/null
+for attempt in {1..10}; do
+    if curl --fail --silent --show-error "http://127.0.0.1:${APP_PORT}/" >/dev/null; then
+        echo_message "Deployment completed successfully"
+        exit 0
+    fi
+    echo "Health check failed. Retry ${attempt}/10..."
+    sleep 2
+done
 
-echo_message "Deployment completed successfully"
+echo "Application did not become healthy on port ${APP_PORT}."
+sudo systemctl status "$SERVICE_NAME" --no-pager -l
+exit 1
