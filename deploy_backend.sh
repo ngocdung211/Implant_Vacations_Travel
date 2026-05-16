@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-PROJECT_DIR="/home/ubuntu/Medical_Clinic"
+PROJECT_DIR="/home/ec2-user/Implant_Vacations_Travel"
 BRANCH="copilot/setup-flask-backend"
 SERVICE_NAME="medical-clinic"
 APP_PORT="4999"
