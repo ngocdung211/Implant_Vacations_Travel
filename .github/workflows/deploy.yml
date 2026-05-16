@@ -17,5 +17,5 @@ jobs:
     steps:
       - name: Deploy on EC2
         run: |
-          cp /home/ubuntu/Medical_Clinic/deploy_backend.sh /tmp/deploy_medical_clinic.sh
+          cp /home/ec2-user/Implant_Vacations_Travel/deploy_backend.sh /tmp/deploy_medical_clinic.sh
           bash /tmp/deploy_medical_clinic.sh
